@@ -1,0 +1,68 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-bls",
+  "namespace": "tap_bls",
+  "variant": "frasermarlow",
+  "label": "Bureau of Labor Statistics",
+  "docs": "https://www.matatika.com/data-details/tap-bls/",
+  "repo": "https://github.com/frasermarlow/tap-bls",
+  "pip_url": "git+https://github.com/frasermarlow/tap-bls.git",
+  "description": "Bureau of Labor Statistics: A government agency that collects, analyzes, and disseminates essential economic data to help people make informed decisions.\n\nThe Bureau of Labor Statistics (BLS) is a unit of the United States Department of Labor that is responsible for measuring labor market activity, working conditions, and price changes in the economy. The BLS collects and analyzes data on employment, wages, productivity, consumer prices, and other economic indicators. This information is used by policymakers, businesses, and individuals to make informed decisions about the economy. The BLS also produces reports on occupational safety and health, and provides information on career opportunities and training programs. Its mission is to promote economic growth and stability by providing accurate, timely, and relevant information to the public.",
+  "logo_url": "https://app.matatika.com/assets/logos/extractors/bls.png",
+  "capabilities": [
+    "catalog",
+    "state",
+    "discover"
+  ],
+  "settings": [
+    {
+      "name": "aspects",
+      "kind": "boolean",
+      "label": "Aspects",
+      "description": "Specifies the type of data to retrieve from the API.",
+      "protected": false
+    },
+    {
+      "name": "annualaverage",
+      "kind": "boolean",
+      "label": "Annual Average",
+      "description": "Specifies whether to retrieve annual average data or not.",
+      "protected": false
+    },
+    {
+      "name": "endyear",
+      "kind": "date_iso8601",
+      "label": "End Year",
+      "description": "Specifies the end year for the data to retrieve.",
+      "protected": false
+    },
+    {
+      "name": "startyear",
+      "kind": "date_iso8601",
+      "label": "Start Year",
+      "description": "Specifies the start year for the data to retrieve.",
+      "protected": false
+    },
+    {
+      "name": "calculations",
+      "kind": "boolean",
+      "label": "Calculations",
+      "description": "Specifies the type of calculations to perform on the data.",
+      "protected": false
+    },
+    {
+      "name": "api-key",
+      "kind": "password",
+      "label": "API Key",
+      "description": "Specifies the API key to use for authentication.",
+      "protected": false
+    },
+    {
+      "name": "series_list_file_location",
+      "kind": "string",
+      "label": "Series List File Location",
+      "description": "Specifies the location of the file containing the list of series to retrieve data for.",
+      "protected": false
+    }
+  ]
+}
